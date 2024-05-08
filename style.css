@@ -1,0 +1,191 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Trebuchet MS','Lucida sans unicode','lucida sans',arial,sans-serif;
+    box-sizing:border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+#main{
+    width:100%;
+    min-height:100hv;
+}
+.top{
+    width:100%;
+    min-height:60vh;
+    background-image :url(https://i.ytimg.com/vi/UiulSneeYbY/hq2.jpg?sqp=-oaymwEoCOADEOgC8quKqQMcGADwAQH4Ac4FgAKACooCDAgAEAEYZSBlKGUwDw==&rs=AOn4CLAVJgoHi2uQMmiFoXUQCfkcJMecAQ
+    );
+    background-size:cover;
+    background-position:center;
+}
+
+.top.overlay{
+    position:relative;
+    width:100%;
+    min-height:inherit;
+}
+.text{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:absolute;
+    width:100%;
+    padding:0m10vh;
+    color:rgb(245, 245, 245);
+    bottom:5%;
+}
+.text h1{
+    font-weight:600;
+    font-size:4vw;
+}
+.text .image{
+    background-image:url(https://th.bing.com/th/id/R.28f2648b397c7e57f6836850a7f7f887?rik=A5geqDfivp%2bwKg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-ns909cGt13M%2fUraOqvpviiI%2fAAAAAAAAAKw%2fJiLW3wia17g%2fs1600%2f4.jpg&ehk=nQJIAfdTcIweKtH4zh9KWq6l592mAY6PhHiCBZjdNsQ%3d&risl=&pid=ImgRaw&r=0);
+    background-size:cover;
+    background-position:center;
+    height:300px;
+    width:220px;
+
+}
+#rtext{
+    display:flex;
+    width:25%;
+    align-items:center;
+    justify-content:space-between; 
+}
+.rtext p{
+    font-size:12px;
+}
+.bottom{
+    display:flex;
+    width:100%;
+    min-height:40vh;
+}
+.b1{
+    width: 30%;
+    min-height:inherit;
+    background-image:url(https://i.ytimg.com/vi/9xy5M5TKSJY/maxresdefault.jpg);
+    background-size:cover;
+    background-position:center;
+}
+.b1 h1{
+    text-align:center;
+    padding:30px;
+}
+.b1 h1{
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+.b2{
+    width: 30%;
+    min-height:inherit;
+    display:flex;
+    flex-direction:column;
+
+}
+.b2 .up{
+    width:100%;
+    min-height:20vh;
+    background-image:url(https://media2.thrillophilia.com/images/photos/000/149/829/original/1553859595_tapola.jpg?gravity=center&width=752&height=450&crop=fill&quality=auto&fetch_format=auto&flags=strip_profile&format=jpg&sign_url=true
+    );
+    background-size:cover;
+    background-position:center;
+}
+.b2 .up h1{
+text-align:center;
+padding:30px;
+}
+.b2 .up p{
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+.b2 .down{
+    width:100%;
+    min-height:20vh;
+    background-image:url(https://th.bing.com/th/id/R.33974aba8ab9672d3f6c950cb6b85775?rik=preT%2ffvcGOycQA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-S2qca8CXwYY%2fUraOpok3UeI%2fAAAAAAAAAKY%2fWxe4qqTmnCw%2fs1600%2f2.jpg&ehk=R9XgJFONS2UYZNTIebyd9eGoT95VsYEHmvX8j03RxP4%3d&risl=&pid=ImgRaw&r=0
+    );
+    background-size:cover;
+}
+.b2 .down .overlay{
+    position:relative;
+    width:100%;
+    min-height:20vh;
+    background-color:rgb(226, 43, 141);
+
+}
+.b3{
+    width:40%;
+    min-height:inherit;
+    background-image: url(https://i.ytimg.com/vi/-Qm9wPCZPLU/maxresdefault.jpg);
+    background-size: cover;
+    background-position:center ;
+
+}
+.b3 .overlay{
+    justify-content:right;
+    position:relative;
+    margin-left:50%;
+    width:50%;
+    height:100%;
+    padding:4vw 3vh;
+}
+.b3 .overlay p{
+    padding:1.2vh;
+
+}
+@media(max-width:700px) {
+    .rtext{
+        flex-direction:column;
+    }
+    .b3 .overlay{
+        width:100%;
+        margin-left:initial;
+
+    }
+}
+@media(max-width:500px){
+    .text{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    .text h1{
+        font-size:5vh;
+    }
+    .text image{
+        height:200px;
+        width:140px;
+        margin-top:20px;
+    }
+    .rtext{
+        flex-direction:column;
+        align-item:flex-start;
+    }
+    .rtext p{
+        margin-top:10px;
+    }
+    .icons{
+        margin-top:10px;
+    }
+    .bottom{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    .b1{
+        width:100%;
+        min-height:30vh;
+    }
+    .b2{
+        width:100%;
+    }
+    .b2 .up{
+        min-height:40vh;
+        min-height: 30vh;
+    }
+    .b3{
+        width:100%;
+        background-position:left;
+    }
+}
